@@ -1,5 +1,5 @@
 cite about-plugin
-about-plugin 'alias "http" to SimpleHTTPServer'
+about-plugin 'alias "http" to SimpleHTTPServer and add pycheckers program'
 
 if [ $(uname) = "Linux" ]
 then
@@ -10,6 +10,12 @@ fi
 
 pycheckers ()
 {
+    # Linting for python.  Can be integrated with emacs flymake for dynamic linting:
+    # http://coder.cl/2011/08/integrating-pycheckers-and-emacs/
+    #
+    # Usage:
+    #   pycheckers file.py
+
     # If pyflakes is not installed, warn the user
     if ! (cmd_exists pyflakes)
     then
