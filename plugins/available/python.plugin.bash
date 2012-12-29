@@ -11,7 +11,7 @@ fi
 pycheckers ()
 {
     # Linting for python.  Can be integrated with emacs flymake for dynamic linting:
-    # http://coder.cl/2011/08/integrating-pycheckers-and-emacs/
+    # https://bitbucket.org/jek/sandbox/src/tip/pycheckers
     #
     # Usage:
     #   pycheckers file.py
