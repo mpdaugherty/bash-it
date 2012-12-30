@@ -58,3 +58,14 @@ function prevcurl() {
   fi
   curl "$*" | open -fa "Preview"
 }
+
+bg_screensaver() {
+    about 'Start your screensaver as your desktop background'
+    example '$ bg_screensaver'
+    group 'osx'
+
+    # This has been tested on OSX 10.6 and 10.8
+    # TODO Figure out how to run this in the background & start/stop it as a service
+    # TODO Start this when the computer starts
+    /System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background
+}
