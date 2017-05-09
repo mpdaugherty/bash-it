@@ -8,7 +8,7 @@ else
   alias http='python -m SimpleHTTPServer'
 fi
 
-pycheckers ()
+pycheckers_disabled ()
 {
     # Linting for python.  Can be integrated with emacs flymake for dynamic linting:
     # https://bitbucket.org/jek/sandbox/src/tip/pycheckers
